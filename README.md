@@ -17,4 +17,5 @@ Here You will interact with: TOKEN base of this dApp Stake/Burn The Contract NFT
 Dont trust, verify!
 
 https://becomingweb3.dev
+
 https://twitter.com/jaqbek_eth
