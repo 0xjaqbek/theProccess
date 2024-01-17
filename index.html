@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trust The Process dApp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="box"> <!-- Wrap all content in a single div named "box" -->
+
+    <div class="part part1 visible">
+        <h1>WELLCOME</h1>
+        <p>This dApp is for interaction farming.<br>Claim Token and approve for stake.<br>Stake it to be able to burn it.<br>So finally You can mint NFT<br>with Your burn ID.<br>Connect wallet to start.<br>dApp on <strong><span class="highlighted">Linea</span></strong> Mainnet.<br>No costs besides tx fee.</p>
+
+        
+<button onclick="connectWallet()">Connect Wallet</button><br>
+<p>Here You will interact with:</p>
+ <a href="https://lineascan.build/token/0xaf96c5708450c9276960592f3b1527f1b1724919#code" target="_blank">TOKEN</a><br>base of this dApp<br><br>
+<a href="https://lineascan.build/address/0xd01403fee3fca932b18f58228b4a0224c048b148#code" target="_blank">Stake/Burn</a><br>The Contract<br><br>
+<a href="https://lineascan.build/address/0xe0f920b90d972100ec24686c775d0b4e5544f9ad#code" target="_blank">NFT</a><br>Souvenir for done process<br>  <p><strong>Dont trust, verify!</strong></p>     
+    </div>
+    <div class="part part2">
+        <h1>CLAIM/APPROVE</h1>
+        <p>Claim token or check balance.<br>Approve token amount equal or less<br>than your balance for next step.</p>
+        <input type="text" id="addressInput" placeholder="Enter Address to Check Balance">
+        <button onclick="getBalance()">Check Balance</button>
+        <button onclick="claimToken()">Claim Token</button>
+<input type="text" id="approvalAmount" placeholder="Enter Approval Amount">
+<button onclick="approveContract()">Approve Contract</button>
+
+    </div>
+    <div class="part part3">
+        <h1>STAKE</h1>
+        <p>Stake previously approved token amount,<br>must be less or equal.</p>
+        <label for="stakeAmount">Stake Amount:</label>
+        <input type="number" id="stakeAmount" step="0.01" min="0" placeholder="Enter amount to stake">
+        <button onclick="stakeTokens()">Stake Tokens</button>
+
+    </div>
+
+<div class="part part4">
+    <h1>BURN</h1>
+    <p>Burn previously approved for stake token amount,<br>must be less or equal.</p>
+
+        <label for="burnAmount">Burn Amount:</label>
+        <input type="number" id="burnAmount" step="0.01" min="0" placeholder="Enter amount to burn">
+        <button onclick="burnStakedTokens()">Burn Staked Tokens</button>
+  
+</div>
+
+<div class="part part5">
+    <h1>GetID And MINT</h1>
+    <p>First click Get ID, than click Mint. To get proper ID count.</p>
+    <button id="getIdButton">Get ID</button>
+<p id="displayedNumber"></p>
+    <button id="mintButton">Mint NFT</button>
+    
+    
+</div>
+</div>
+
+
+<footer>
+     2023 delivered by <a href="https://twitter.com/jaqbek_eth" target="_blank">jaqbek</a>. All rights left.
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
